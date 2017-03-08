@@ -1,0 +1,17 @@
+spring:
+   application:
+           name: api-getaway
+server:
+    port: 5555
+zuul:
+   routes:
+        api-a:
+           path: /api-a/**
+           serviceId: service-a
+        api-b:
+           path: /api-b/**
+           serviceId: service-b
+eureka:
+   client:
+      serviceUrl:
+            defaultZone: http://localhost:1111/eureka
