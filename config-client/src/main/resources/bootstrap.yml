@@ -1,0 +1,10 @@
+spring:
+    application:
+             name: space
+    cloud:
+       config:
+           profile: test
+           label: master
+           uri: http://localhost:7001/
+server:
+    port: 7002

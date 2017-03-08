@@ -1,0 +1,14 @@
+spring:
+   application:
+         name: config-server
+# git管理配置
+   cloud:
+       config:
+          server:
+               git:
+                  uri: https://git.oschina.net/rivenbest/spring-cloud-config
+#                  searchPaths:
+                  username: 1737350736@qq.com
+                  password: qq15221950667
+server:
+    port: 7001
